@@ -1,52 +1,44 @@
-# MNIST Rakam Sınıflandırma - ANN ve Görüntü İşleme
+# MNIST Digit Classification - ANN and Image Processing
 
-Bu proje MNIST veri setini kullanarak yapay sinir ağları (ANN) ile rakam sınıflandırma yapmaktadır.
+This project performs digit classification using Artificial Neural Networks (ANN) on the MNIST dataset.
 
-## Özellikler
-- Histogram eşitleme ile kontrast iyileştirme
-- Gaussian blur ile gürültü azaltma
-- Canny edge detection ile kenar tespiti
-- 3 katmanlı ANN modeli
-- %90.10 test doğruluğu
+## Features
+- Contrast enhancement using histogram equalization
+- Noise reduction using Gaussian blur
+- Edge detection using Canny edge detection
+- 3-layer ANN model
+- 90.10% test accuracy
 
-## Kullanılan Teknolojiler
+## Technologies Used
 - Python 3.x
 - TensorFlow/Keras
 - OpenCV
 - NumPy
 - Matplotlib
 
-## Kurulum
-```bash
-pip install -r requirements.txt
-```
-
-## Kullanım
-```bash
-python mnist_ann.py
-```
-
-## Sonuçlar
-## Görüntü İşleme Aşamaları
+## Results
+## Image Processing Stages
 <img src="images/not3.PNG" width="500">
 
 
-## Model Mimarisi
+## Model Architecture
 <img src="images/not4.PNG" width="500">
 
-## Model Performansı
+## Model Performance
 <img src="images/not6.PNG" width="500">
 
-## Model Mimarisi
-- Giriş Katmanı: 128 nöron (ReLU)
+## Model Architecture
+- Input Layer: 128 neurons (ReLU)
 - Dropout: 0.5
-- Gizli Katman: 64 nöron (ReLU)
-- Çıkış Katmanı: 10 nöron (Softmax)
+- Hidden Layer: 64 neurons (ReLU)
+- Output Layer: 10 neurons (Softmax)
 
-## Performans
-- Eğitim Doğruluğu: %97.88
-- Test Doğruluğu: %90.10
+## Performance
+- Training Accuracy: 97.88%
+- Test Accuracy: 90.10%
 - Test Loss: 0.6011
+
+
 
 
 
